@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".phy_optical"
+    tools:showIn="@layout/app_bar_phy_optical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_style"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/optical_refractive_index"
+            android:textSize="@dimen/txt_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/op_ri_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/refractive_index" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sin" />
+
+            <EditText
+                android:id="@+id/op_ri_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_ri_c" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sin" />
+
+            <EditText
+                android:id="@+id/op_ri_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_ri_v" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/op_ri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"
+            android:background="@drawable/button_style"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_style"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/optical_critical_angle"
+            android:textSize="@dimen/txt_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sin" />
+
+            <EditText
+                android:id="@+id/op_ca_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_ca_c" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div" />
+
+            <EditText
+                android:id="@+id/op_ca_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_ca_n" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/op_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"
+            android:background="@drawable/button_style"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_style"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optical_lens_for"
+            android:textSize="@dimen/txt_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div" />
+
+            <EditText
+                android:id="@+id/op_lf_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_lf_u" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div" />
+
+            <EditText
+                android:id="@+id/op_lf_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_lf_v" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div" />
+
+            <EditText
+                android:id="@+id/op_lf_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_lf_f" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/op_lf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"
+            android:background="@drawable/button_style"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_style"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optical_magnification"
+            android:textSize="@dimen/txt_size"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_mg_m"
+                android:id="@+id/op_mg_m"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/op_mg_f1"
+                android:hint="@string/optical_mg_f"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/branket_o"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/op_mg_u"
+                android:hint="@string/optical_mg_u"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minus"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/optical_mg_f"
+                android:id="@+id/op_mg_f2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/branket_c"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/op_mg"
+            android:text="@string/cal"
+            android:background="@drawable/button_style"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

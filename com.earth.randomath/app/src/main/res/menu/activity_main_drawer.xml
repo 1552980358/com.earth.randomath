@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dise"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/dise_btn_txt" />
+        <item
+            android:id="@+id/nav_randomnum"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/randno_banner" />
+        <item
+            android:id="@+id/nav_quaequa"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/quaequa"/>
+    </group>
+
+    <item android:title="物理">
+        <menu>
+            <item android:id="@+id/nav_heat"
+                android:icon="@drawable/heat"
+                android:title="@string/phy_heat"/>
+            <item android:id="@+id/nav_optical"
+                android:icon="@drawable/optical"
+                android:title="@string/optical"/>
+        </menu>
+    </item>
+
+    <item android:title="其他">
+        <menu>
+            <item android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_about" />
+            <item android:id="@+id/nav_donate"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_donate" />
+        </menu>
+    </item>
+
+</menu>

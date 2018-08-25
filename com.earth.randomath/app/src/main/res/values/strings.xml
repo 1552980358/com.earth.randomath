@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">随缘科学</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">随缘科学 &lt;v1.2.2&gt;</string>
+    <string name="nav_header_subtitle">By住在地球真累</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">正在施工~</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_donate">请作者喝阔落/写必/昏达</string>
+    <string name="content_main">你好呀！点击左上角或向右拉开始哦~</string>
+
+
+    <string name="cal">计算</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
+    <string name="equal">=</string>
+    <string name="branket_o">(</string>
+    <string name="branket_c">)</string>
+    <string name="degree">°</string>
+    <string name="one">1</string>
+    <string name="space">&#160;</string>
+
+
+    <string name="dise_btn_txt">掷骰子</string>
+    <string name="randno_banner">X 到 Y 之间整型数</string>
+    <string name="randno_input_x">输入X值</string>
+    <string name="randno_input_y">输入Y值</string>
+    <string name="randno_resu">结果：</string>
+    <string name="randno_btn">随机数字</string>
+
+    <string name="quaequa">二次方程</string>
+    <string name="quaequa_equation">Ax² + Bx + C = 0</string>
+    <string name="quaequa_inputa">输入A值</string>
+    <string name="quaequa_inputb">输入B值</string>
+    <string name="quaequa_inputc">输入C值</string>
+    <string name="delta_lt_0">无实数根，Delta &lt; 0</string>
+
+    <string name="phy_heat">热学</string>
+    <string name="heat_capacity">C</string>
+    <string name="specific_heat_capacity">c</string>
+    <string name="energy">Q</string>
+    <string name="temperature">ΔT</string>
+    <string name="mass">m</string>
+
+    <string name="heat_capacity_for">&#160;热容(C)&lt;J/℃&gt; = 能量(Q)&lt;J&gt; / 温度(ΔT)&lt;℃&gt;&#160;</string>
+
+    <string name="specific_heat_capacity_for_1">&#160;比热容(c)&lt;J/(kg*℃)&gt; = 能量(Q)&lt;J&gt; /&#160;</string>
+    <string name="specific_heat_capacity_for_2">&#160;( 质量(m)&lt;kg&gt; * 温度(ΔT)&lt;℃&gt; )&#160;</string>
+
+    <string name="hc_shc_for_1">&#160;热容(C)&lt;J/℃&gt; = 比热容(c)&lt;J/(kg*℃)&gt;&#160;</string>
+    <string name="hc_shc_for_2">&#160;* 质量(m)&lt;kg&gt;&#160;</string>
+
+    <string name="latent_heat_for">&#160;比潜热(l)&lt;J/kg&gt; = 能量(Q)&lt;J&gt; / 质量(m)&lt;kg&gt;&#160;</string>
+
+
+    <string name="optical">光学</string>
+
+    <string name="optical_refractive_index">&#160;折射率(n) = 介质1(sinθc) / 介质2(sinθv)&#160;</string>
+    <string name="refractive_index">n</string>
+    <string name="optical_ri_c">θc</string>
+    <string name="optical_ri_v">θv</string>
+    <string name="sin">sin</string>
+
+    <string name="optical_critical_angle">&#160;临界角(sinθc) = 1 / 折射率(n)&#160;</string>
+    <string name="optical_ca_c">θc</string>
+    <string name="optical_ca_n">n</string>
+
+    <string name="optical_lens_for">&#160;1 / 物距(u) + 1 / 焦距(v) = 1 / 影像(f)&#160;</string>
+    <string name="optical_lf_u">u</string>
+    <string name="optical_lf_v">v</string>
+    <string name="optical_lf_f">f</string>
+    
+    <string name="optical_magnification">&#160;放大倍率(M) = 影像(f) / ( 物距(u) - 影像(f) )&#160;</string>
+    <string name="optical_mg_m">M</string>
+    <string name="optical_mg_f">f</string>
+    <string name="optical_mg_u">u</string>
+
+
+    <string name="radio_btn_not_show">记住了，弹窗再也再也不显示哦~</string>
+    <string name="radio_btn_show">以后继续看到这条弹窗哦~</string>
+    <string name="dialog_main_about_1">小伙伴你好啊！</string>
+    <string name="dialog_main_about_2">这个App的作者叫&lt;住在地球真累&gt;!没错，就是我！</string>
+    <string name="dialog_main_about_3">除了能掷骰子，随机数字外，你还能用预录入的公式计算物理哦~</string>
+    <string name="dialog_main_about_4">你需要留下一个输入框，让我输出答案哦~</string>
+    <string name="dialog_main_about_5">不然我不但不能输出答案，甚至可能会导致意外停止的问题呢!</string>
+    <string name="dialog_main_about_6">（虽然我已经尝试做过优化，意外停止的机会应该很低，嗯~）</string>
+    <string name="dialog_main_about_7">话已经说完了哦~请选择以后能不能看得到这天通知哦</string>
+
+    <string name="secr_p1">拿去拿去，哼~</string>
+    <string name="secr_link1">https://mega.nz/#!6WQTAIrA!gScVdj1ewmbF_tWFFO5V8V17nySCBt52ZgoH1DTSbVk</string>
+    <string name="lunch">启动</string>
+</resources>
