@@ -20,11 +20,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:divider="@drawable/gradient_drawer"
-        android:showDividers="middle"
         android:background="@drawable/linearlayout_style"
         android:id="@+id/main_linear">
+
         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/gradient_drawer"
+            android:showDividers="middle"
+            android:orientation="vertical">
+            <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -46,7 +51,7 @@
                 android:text="@string/space"
                 android:id="@+id/main_13"/>
         </LinearLayout>
-        <LinearLayout
+            <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -68,7 +73,7 @@
                 android:text="@string/space"
                 android:id="@+id/main_23"/>
         </LinearLayout>
-        <LinearLayout
+            <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -90,6 +95,13 @@
                 android:text="@string/space"
                 android:id="@+id/main_33"/>
         </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_main"
+            android:id="@+id/main_txt"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

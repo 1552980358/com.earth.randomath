@@ -1,6 +1,7 @@
 package com.earth.randomath;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.*;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +19,7 @@ public class main extends AppCompatActivity
     private int count=0;
     SharedPreferences sp;
 
-    int no_count = 0;
+    int no_count = 1;
 
     Button btn_11;
     Button btn_12;
@@ -30,6 +31,10 @@ public class main extends AppCompatActivity
     Button btn_32;
     Button btn_33;
 
+    TextView main_text;
+
+    String winer = " ";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,7 @@ public class main extends AppCompatActivity
         Toolbar toolbar =super.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        main_text = findViewById(R.id.main_txt);
         // x y
         btn_11 = findViewById(R.id.main_11);
         btn_12 = findViewById(R.id.main_12);
@@ -48,11 +54,30 @@ public class main extends AppCompatActivity
         btn_32 = findViewById(R.id.main_32);
         btn_33 = findViewById(R.id.main_33);
 
+        Button main_clean = findViewById(R.id.main_clear);
+        main_clean.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btn_11.setText(" ");
+                btn_12.setText(" ");
+                btn_13.setText(" ");
+                btn_21.setText(" ");
+                btn_22.setText(" ");
+                btn_23.setText(" ");
+                btn_31.setText(" ");
+                btn_32.setText(" ");
+                btn_33.setText(" ");
+                main_text.setText("现在是玩家\"O\"时间哦~");
+                count = 1;
+                winer = " ";
+            }
+        });
+
         final View.OnClickListener listen = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                no_count++;
                 if (no_count % 2 ==1){
+                    main_text.setText("现在是玩家\"X\"时间哦~ \n" );
                     switch (v.getId()){
                         case R.id.main_11:
                             btn_11.setText("O");
@@ -83,6 +108,7 @@ public class main extends AppCompatActivity
                             break;
                     }
                 } else {
+                    main_text.setText("现在是玩家\"O\"时间哦~ \n" );
                     switch (v.getId()){
                         case R.id.main_11:
                             btn_11.setText("X");
@@ -113,8 +139,7 @@ public class main extends AppCompatActivity
                             break;
                     }
                 }
-
-                int winer = 0;
+                no_count++;
                 if ((btn_11.getText().toString().equals("O") && btn_12.getText().toString().equals("O")
                         && btn_13.getText().toString().equals("O"))
                         || (btn_11.getText().toString().equals("O") && btn_21.getText().toString().equals("O")
@@ -127,7 +152,7 @@ public class main extends AppCompatActivity
                         && btn_33.getText().toString().equals("O"))
                         || (btn_31.getText().toString().equals("O") && btn_22.getText().toString().equals("O")
                         && btn_31.getText().toString().equals("O"))){
-                    winer = 1;
+                    winer = "o";
                 } else if ((btn_11.getText().toString().equals("X") && btn_12.getText().toString().equals("X")
                         && btn_13.getText().toString().equals("X"))
                         || (btn_11.getText().toString().equals("X") && btn_21.getText().toString().equals("X")
@@ -140,7 +165,36 @@ public class main extends AppCompatActivity
                         && btn_33.getText().toString().equals("X"))
                         || (btn_31.getText().toString().equals("X") && btn_22.getText().toString().equals("X")
                         && btn_31.getText().toString().equals("X"))){
-                    winer = 2;
+                    winer = "X";
+                }
+                if (winer == "O" || winer == "X"){
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(main.this);
+                    dialog.setTitle("胜利！");
+                    dialog.setMessage("胜利者为\""+winer+"\"! \n 记得选清除后开始哦~\n不然发生了什么BUG，我才不会管呢~");
+                    dialog.setPositiveButton("清除后继续", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            btn_11.setText(" ");
+                            btn_12.setText(" ");
+                            btn_13.setText(" ");
+                            btn_21.setText(" ");
+                            btn_22.setText(" ");
+                            btn_23.setText(" ");
+                            btn_31.setText(" ");
+                            btn_32.setText(" ");
+                            btn_33.setText(" ");
+                            main_text.setText("现在是玩家\"O\"时间哦~");
+                            count = 1;
+                            winer = " ";
+                        }
+                    });
+                    dialog.setNegativeButton("哦~", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Toast.makeText(main.this, "记得要点清除才继续游戏哦~", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    dialog.show();
                 }
 
             }
@@ -155,8 +209,6 @@ public class main extends AppCompatActivity
         btn_31.setOnClickListener(listen);
         btn_32.setOnClickListener(listen);
         btn_33.setOnClickListener(listen);
-
-
 
 
         sp=getSharedPreferences("save",MODE_PRIVATE);
