@@ -43,6 +43,7 @@ public class main extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         main_text = findViewById(R.id.main_txt);
+        main_text.setText("现在是玩家\"O\"时间哦~");
         // x y
         btn_11 = findViewById(R.id.main_11);
         btn_12 = findViewById(R.id.main_12);
@@ -77,7 +78,7 @@ public class main extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 if (no_count % 2 ==1){
-                    main_text.setText("现在是玩家\"X\"时间哦~ \n" );
+                    main_text.setText("现在是玩家\"X\"时间哦~" );
                     switch (v.getId()){
                         case R.id.main_11:
                             btn_11.setText("O");
@@ -108,7 +109,7 @@ public class main extends AppCompatActivity
                             break;
                     }
                 } else {
-                    main_text.setText("现在是玩家\"O\"时间哦~ \n" );
+                    main_text.setText("现在是玩家\"O\"时间哦~" );
                     switch (v.getId()){
                         case R.id.main_11:
                             btn_11.setText("X");
@@ -150,9 +151,9 @@ public class main extends AppCompatActivity
                         && btn_32.getText().toString().equals("O"))
                         || (btn_13.getText().toString().equals("O") && btn_23.getText().toString().equals("O")
                         && btn_33.getText().toString().equals("O"))
-                        || (btn_31.getText().toString().equals("O") && btn_22.getText().toString().equals("O")
+                        || (btn_13.getText().toString().equals("O") && btn_22.getText().toString().equals("O")
                         && btn_31.getText().toString().equals("O"))){
-                    winer = "o";
+                    winer = "O";
                 } else if ((btn_11.getText().toString().equals("X") && btn_12.getText().toString().equals("X")
                         && btn_13.getText().toString().equals("X"))
                         || (btn_11.getText().toString().equals("X") && btn_21.getText().toString().equals("X")
@@ -163,7 +164,7 @@ public class main extends AppCompatActivity
                         && btn_32.getText().toString().equals("X"))
                         || (btn_13.getText().toString().equals("X") && btn_23.getText().toString().equals("X")
                         && btn_33.getText().toString().equals("X"))
-                        || (btn_31.getText().toString().equals("X") && btn_22.getText().toString().equals("X")
+                        || (btn_13.getText().toString().equals("X") && btn_22.getText().toString().equals("X")
                         && btn_31.getText().toString().equals("X"))){
                     winer = "X";
                 }

@@ -9,103 +9,107 @@
     tools:showIn="@layout/app_bar_main"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/content_main"
-        android:layout_weight="1"
-        android:layout_gravity="center"/>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/linearlayout_style"
-        android:id="@+id/main_linear">
-
+        android:id="@+id/main_linear"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/linearlayout_style_2">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_11"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_12"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_13"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:divider="@drawable/gradient_drawer"
-            android:showDividers="middle"
-            android:orientation="vertical">
-            <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_21"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_22"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:id="@+id/main_23"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:divider="@drawable/gradient_drawer"
-            android:showDividers="middle">
+            android:background="@color/colorPrimary">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/space"
-                android:id="@+id/main_11"/>
+                android:id="@+id/main_31"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/space"
-                android:id="@+id/main_12"/>
+                android:id="@+id/main_32"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/space"
-                android:id="@+id/main_13"/>
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/gradient_drawer"
-            android:showDividers="middle">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_21"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_22"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_23"/>
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/gradient_drawer"
-            android:showDividers="middle">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_31"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_32"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/space"
-                android:id="@+id/main_33"/>
-        </LinearLayout>
-    </LinearLayout>
+                android:id="@+id/main_33"
+                android:background="@drawable/button_style_2"
+                style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/content_main"
-            android:id="@+id/main_txt"/>
+            android:id="@+id/main_txt"
+            android:layout_gravity="center"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/main_clear"/>
-    </LinearLayout>
-
+            android:id="@+id/main_clear"
+            android:background="@drawable/button_style"
+            android:text="@string/main_reset"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
