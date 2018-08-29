@@ -98,7 +98,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_style"
             android:text="@string/cal"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -162,7 +163,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_style"
             android:text="@string/cal"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <TextView
@@ -224,7 +226,8 @@
             android:text="@string/cal"
             android:id="@+id/phy_heat_hc_shc"
             android:background="@drawable/button_style"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -293,7 +296,8 @@
             android:layout_gravity="center"
             android:background="@drawable/button_style"
             android:text="@string/cal"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

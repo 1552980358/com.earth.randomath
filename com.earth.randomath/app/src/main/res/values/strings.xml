@@ -9,6 +9,7 @@
     <string name="nav_about">关于</string>
     <string name="nav_donate">请作者喝阔落/写必/昏达</string>
     <string name="main_reset">重置</string>
+    <string name="main_title">OOXX小游♂戏</string>
 
     <string name="cal">计算</string>
     <string name="plus">+</string>
@@ -44,15 +45,20 @@
     <string name="temperature">ΔT</string>
     <string name="mass">m</string>
 
-    <string name="heat_capacity_for">&#160;热容(C)&lt;J/℃&gt; = 能量(Q)&lt;J&gt; / 温度(ΔT)&lt;℃&gt;&#160;</string>
+    <string name="phy_motion"></string>
+    <string name="motion_for1"></string>
 
-    <string name="specific_heat_capacity_for_1">&#160;比热容(c)&lt;J/(kg*℃)&gt; = 能量(Q)&lt;J&gt; /&#160;</string>
-    <string name="specific_heat_capacity_for_2">&#160;( 质量(m)&lt;kg&gt; * 温度(ΔT)&lt;℃&gt; )&#160;</string>
 
-    <string name="hc_shc_for_1">&#160;热容(C)&lt;J/℃&gt; = 比热容(c)&lt;J/(kg*℃)&gt;&#160;</string>
-    <string name="hc_shc_for_2">&#160;* 质量(m)&lt;kg&gt;&#160;</string>
 
-    <string name="latent_heat_for">&#160;比潜热(l)&lt;J/kg&gt; = 能量(Q)&lt;J&gt; / 质量(m)&lt;kg&gt;&#160;</string>
+    <string name="heat_capacity_for">&#160;热容(C) = 能量(Q) / 温度(ΔT)&#160;</string>
+
+    <string name="specific_heat_capacity_for_1">&#160;比热容(c) = 能量(Q) /&#160;</string>
+    <string name="specific_heat_capacity_for_2">&#160;( 质量(m) * 温度(ΔT) )&#160;</string>
+
+    <string name="hc_shc_for_1">&#160;热容(C) = 比热容(c)&#160;</string>
+    <string name="hc_shc_for_2">&#160;* 质量(m)&#160;</string>
+
+    <string name="latent_heat_for">&#160;比潜热(l) = 能量(Q) / 质量(m)&#160;</string>
 
 
     <string name="optical">光学</string>
@@ -82,10 +88,9 @@
     <string name="radio_btn_show">以后继续看到这条弹窗哦~</string>
     <string name="dialog_main_about_1">小伙伴你好啊！</string>
     <string name="dialog_main_about_2">这个App的作者叫&lt;住在地球真累&gt;!没错，就是我！</string>
-    <string name="dialog_main_about_3">除了能掷骰子，随机数字外，你还能用预录入的公式计算物理哦~</string>
-    <string name="dialog_main_about_4">你需要留下一个输入框，让我输出答案哦~</string>
-    <string name="dialog_main_about_5">不然我不但不能输出答案，甚至可能会导致意外停止的问题呢!</string>
-    <string name="dialog_main_about_6">（虽然我已经尝试做过优化，意外停止的机会应该很低，嗯~）</string>
+    <string name="dialog_main_about_4">对于公式，你需要留下一个输入框，让我输出答案哦~</string>
+    <string name="dialog_main_about_5">不然会导致意外停止的问题呢!</string>
+    <string name="dialog_main_about_6">优化已经做过了，谁知道会不会有意外？</string>
     <string name="dialog_main_about_7">话已经说完了哦~请选择以后能不能看得到这天通知哦</string>
 
     <string name="secr_p1">拿去拿去，哼~</string>

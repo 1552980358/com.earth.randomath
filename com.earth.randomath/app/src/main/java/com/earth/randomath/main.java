@@ -69,7 +69,7 @@ public class main extends AppCompatActivity
                 btn_32.setText(" ");
                 btn_33.setText(" ");
                 main_text.setText("现在是玩家\"O\"时间哦~");
-                count = 1;
+                no_count = 1;
                 winer = " ";
             }
         });
@@ -81,62 +81,170 @@ public class main extends AppCompatActivity
                     main_text.setText("现在是玩家\"X\"时间哦~" );
                     switch (v.getId()){
                         case R.id.main_11:
-                            btn_11.setText("O");
+                            if (btn_11.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_11.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_12:
-                            btn_12.setText("O");
+                            if (btn_12.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_12.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_13:
-                            btn_13.setText("O");
+                            if (btn_13.getText().toString().equals(" ") && winer.equals(" ")){
+                                btn_13.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_21:
-                            btn_21.setText("O");
+                            if (btn_21.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_21.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_22:
-                            btn_22.setText("O");
+                            if (btn_22.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_22.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_23:
-                            btn_23.setText("O");
+                            if (btn_23.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_23.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_31:
-                            btn_31.setText("O");
+                            if (btn_31.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_31.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_32:
-                            btn_32.setText("O");
+                            if (btn_32.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_32.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_33:
-                            btn_33.setText("O");
+                            if (btn_33.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_33.setText("O");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"O\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                     }
                 } else {
                     main_text.setText("现在是玩家\"O\"时间哦~" );
                     switch (v.getId()){
                         case R.id.main_11:
-                            btn_11.setText("X");
+                            if (btn_11.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_11.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_12:
-                            btn_12.setText("X");
+                            if (btn_12.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_12.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_13:
-                            btn_13.setText("X");
+                            if (btn_13.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_13.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_21:
-                            btn_21.setText("X");
+                            if (btn_21.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_21.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_22:
-                            btn_22.setText("X");
+                            if (btn_22.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_22.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_23:
-                            btn_23.setText("X");
+                            if (btn_23.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_23.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_31:
-                            btn_31.setText("X");
+                            if (btn_31.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_31.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_32:
-                            btn_32.setText("X");
+                            if (btn_32.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_32.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                         case R.id.main_33:
-                            btn_33.setText("X");
+                            if (btn_33.getText().toString().equals(" ") && winer.equals(" ")) {
+                                btn_33.setText("X");
+                            } else {
+                                no_count--;
+                                main_text.setText("现在是玩家\"X\"时间哦~" );
+                                Toast.makeText(main.this, "不可以做更改哦~", Toast.LENGTH_SHORT).show();
+                            }
                             break;
                     }
                 }
@@ -152,7 +260,11 @@ public class main extends AppCompatActivity
                         || (btn_13.getText().toString().equals("O") && btn_23.getText().toString().equals("O")
                         && btn_33.getText().toString().equals("O"))
                         || (btn_13.getText().toString().equals("O") && btn_22.getText().toString().equals("O")
-                        && btn_31.getText().toString().equals("O"))){
+                        && btn_31.getText().toString().equals("O"))
+                        || (btn_21.getText().toString().equals("O") && btn_22.getText().toString().equals("O")
+                        && btn_23.getText().toString().equals("O"))
+                        || (btn_31.getText().toString().equals("O") && btn_32.getText().toString().equals("O")
+                        && btn_33.getText().toString().equals("O"))){
                     winer = "O";
                 } else if ((btn_11.getText().toString().equals("X") && btn_12.getText().toString().equals("X")
                         && btn_13.getText().toString().equals("X"))
@@ -165,13 +277,18 @@ public class main extends AppCompatActivity
                         || (btn_13.getText().toString().equals("X") && btn_23.getText().toString().equals("X")
                         && btn_33.getText().toString().equals("X"))
                         || (btn_13.getText().toString().equals("X") && btn_22.getText().toString().equals("X")
-                        && btn_31.getText().toString().equals("X"))){
+                        && btn_31.getText().toString().equals("X"))
+                        || (btn_21.getText().toString().equals("X") && btn_22.getText().toString().equals("X")
+                        && btn_23.getText().toString().equals("X"))
+                        || (btn_31.getText().toString().equals("X") && btn_32.getText().toString().equals("X")
+                        && btn_33.getText().toString().equals("X"))){
                     winer = "X";
                 }
-                if (winer == "O" || winer == "X"){
+                if (winer.equals("O") || winer.equals("X")){
+                    main_text.setText("胜利者为\\\"\"+winer+\"\\\"!");
                     AlertDialog.Builder dialog = new AlertDialog.Builder(main.this);
                     dialog.setTitle("胜利！");
-                    dialog.setMessage("胜利者为\""+winer+"\"! \n 记得选清除后开始哦~\n不然发生了什么BUG，我才不会管呢~");
+                    dialog.setMessage("胜利者为\""+winer+"\"! \n记得选清除后开始哦~\n不然发生了什么BUG，我才不会管呢~");
                     dialog.setPositiveButton("清除后继续", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -185,7 +302,7 @@ public class main extends AppCompatActivity
                             btn_32.setText(" ");
                             btn_33.setText(" ");
                             main_text.setText("现在是玩家\"O\"时间哦~");
-                            count = 1;
+                            no_count = 1;
                             winer = " ";
                         }
                     });
