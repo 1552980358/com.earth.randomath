@@ -1,12 +1,10 @@
 package com.earth.randomath;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.*;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.*;
-import android.support.v4.app.NotificationCompatSideChannelService;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.*;
@@ -328,7 +326,6 @@ public class main extends AppCompatActivity
         btn_32.setOnClickListener(listen);
         btn_33.setOnClickListener(listen);
 
-
         sp=getSharedPreferences("save",MODE_PRIVATE);
         String show_dialog = sp.getString("sd_str","");
 
@@ -454,6 +451,10 @@ public class main extends AppCompatActivity
                 break;
             case R.id.nav_heat :
                 intent.setClass(main.this,phy_heat.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_mechanics:
+                intent.setClass(main.this,phy_mechanics.class);
                 startActivity(intent);
                 break;
             case R.id.nav_optical:

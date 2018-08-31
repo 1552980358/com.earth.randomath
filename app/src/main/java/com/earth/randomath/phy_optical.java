@@ -70,7 +70,7 @@ public class phy_optical extends AppCompatActivity implements NavigationView.OnN
                 } else if (TextUtils.isEmpty(ri_n.getText())
                         && TextUtils.isEmpty(ri_c.getText())
                         && TextUtils.isEmpty(ri_v.getText())){
-                    Toast.makeText(phy_optical.this, "你木有输入哦~",
+                    Toast.makeText(phy_optical.this, "你木有输入数据哦~",
                             Toast.LENGTH_SHORT).show();
                 } else if ((TextUtils.isEmpty(ri_n.getText()) && TextUtils.isEmpty(ri_c.getText()))
                         || (TextUtils.isEmpty(ri_n.getText()) && TextUtils.isEmpty(ri_v.getText()))
@@ -318,6 +318,10 @@ public class phy_optical extends AppCompatActivity implements NavigationView.OnN
                 intent .setClass(phy_optical.this,phy_optical.class);
                 startActivity(intent);
                 finish();
+                break;
+            case R.id.nav_mechanics:
+                intent.setClass(phy_optical.this,phy_mechanics.class);
+                startActivity(intent);
                 break;
             case R.id.nav_about :
                 Dialog.setTitle("关于");

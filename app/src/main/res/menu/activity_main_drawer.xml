@@ -26,6 +26,9 @@
             <item android:id="@+id/nav_optical"
                 android:icon="@drawable/optical"
                 android:title="@string/optical"/>
+            <item android:id="@+id/nav_mechanics"
+                android:icon="@drawable/heat"
+                android:title="@string/phy_mechanics"/>
         </menu>
     </item>
 

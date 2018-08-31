@@ -50,6 +50,10 @@
             android:name=".phy_optical"
             android:parentActivityName=".main"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".phy_mechanics"
+            android:parentActivityName=".main"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

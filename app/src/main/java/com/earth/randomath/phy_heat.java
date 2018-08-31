@@ -1,11 +1,9 @@
 package com.earth.randomath;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
+import android.content.*;
 import android.net.Uri;
 import android.os.Bundle;
-
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -44,7 +42,7 @@ public class phy_heat extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phy_heat);
 
-        Toolbar toolbar =super.findViewById(R.id.toolbar);
+        Toolbar toolbar = super.findViewById(R.id.toolbar);
         toolbar.setTitle("物理 - 热学");
         setSupportActionBar(toolbar);
         // call out back button
@@ -69,7 +67,7 @@ public class phy_heat extends AppCompatActivity
                 } else if (TextUtils.isEmpty(hc_c.getText())
                         && TextUtils.isEmpty(hc_q.getText())
                         && TextUtils.isEmpty(hc_t.getText())){
-                    Toast.makeText(phy_heat.this, "你输入的数据不够哦~",
+                    Toast.makeText(phy_heat.this, "你木有输入数据哦~",
                             Toast.LENGTH_SHORT).show(); // 3 EditText null
                 } else if ((TextUtils.isEmpty(hc_c.getText()) && TextUtils.isEmpty(hc_q.getText()))
                         || (TextUtils.isEmpty(hc_c.getText()) && TextUtils.isEmpty(hc_t.getText()))
@@ -210,7 +208,7 @@ public class phy_heat extends AppCompatActivity
                 } else if (TextUtils.isEmpty(hc_shc_hc.getText())
                         && TextUtils.isEmpty(hc_shc_shc.getText())
                         && TextUtils.isEmpty(hc_shc_m.getText())){
-                    Toast.makeText(phy_heat.this, "你输入的数据不够哦~",
+                    Toast.makeText(phy_heat.this, "你木有输入数据哦~",
                             Toast.LENGTH_SHORT).show();  // 3 EditText null
                 } else if ((TextUtils.isEmpty(hc_shc_hc.getText()) && TextUtils.isEmpty(hc_shc_shc.getText()))
                         || (TextUtils.isEmpty(hc_shc_hc.getText()) && TextUtils.isEmpty(hc_shc_m.getText()))
@@ -263,7 +261,7 @@ public class phy_heat extends AppCompatActivity
                 }else if (TextUtils.isEmpty(slh_l.getText())
                         && TextUtils.isEmpty(slh_m.getText())
                         && TextUtils.isEmpty(slh_q.getText())) {
-                    Toast.makeText(phy_heat.this, "你输入的数据不够哦~",
+                    Toast.makeText(phy_heat.this, "你木有输入数据哦~",
                             Toast.LENGTH_SHORT).show();  // 3 EditText null
                 } else if ((TextUtils.isEmpty(slh_l.getText()) && TextUtils.isEmpty(slh_m.getText()))
                         || (TextUtils.isEmpty(slh_l.getText()) && TextUtils.isEmpty(slh_q.getText()))
@@ -335,6 +333,10 @@ public class phy_heat extends AppCompatActivity
                 intent .setClass(phy_heat.this,phy_optical.class);
                 startActivity(intent);
                 finish();
+                break;
+            case R.id.nav_mechanics:
+                intent.setClass(phy_heat.this,phy_mechanics.class);
+                startActivity(intent);
                 break;
             case R.id.nav_about :
                 Dialog.setTitle("关于");

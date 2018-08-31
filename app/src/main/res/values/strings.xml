@@ -22,6 +22,7 @@
     <string name="degree">°</string>
     <string name="one">1</string>
     <string name="space">&#160;</string>
+    <string name="half">&#189;</string>
 
 
     <string name="dise_btn_txt">掷骰子</string>
@@ -45,10 +46,30 @@
     <string name="temperature">ΔT</string>
     <string name="mass">m</string>
 
-    <string name="phy_motion"></string>
-    <string name="motion_for1"></string>
+    <string name="phy_mechanics">力学</string>
+    <string name="phy_motion">力学 - 运动</string>
+    <string name="motion_for1">&#160;距离(s) = &#189; * ( 始初(u) - 结束(v) ) * 时间(t)&#160;</string>
+    <string name="motion_for2">结束(v) = 始初(u) + ( 加速(a) * 时间(t) )</string>
+    <string name="motion_for3">&#189;距离(s) = ( 始初(u) * 时间(t) ) + ( 加速(a) * 时间²(t²) )&#189;</string>
+    <string name="motion_for4">结束²(v²) - 始初²(u²) = 2 * 加速(a) * 距离(s)</string>
 
+    <string name="init">u</string>
+    <string name="fin">v</string>
+    <string name="displacement">s</string>
+    <string name="time">t</string>
+    <string name="acceleration">a</string>
+    <string name="sq.init">u²</string>
+    <string name="sq.fin">v²</string>
+    <string name="gravity">g</string>
+    <string name="height">h</string>
 
+    <string name="about_g">&#160;g =</string>
+    <string name="edt_g">&#160;默认为9.81，在此输入你的g值&#160;</string>
+
+    <string name="phy_energy_ke">动能(KE) = &#189; * 质量(m) * 速率²(v²)</string>
+    <string name="phy_energy_pe">势能(PE) = 质量(m) * 重力加速度(g) * 高度(h)</string>
+    <string name="energy_ke_ke">KE</string>
+    <string name="energy_pe_pe">PE</string>
 
     <string name="heat_capacity_for">&#160;热容(C) = 能量(Q) / 温度(ΔT)&#160;</string>
 
