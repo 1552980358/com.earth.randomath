@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.*;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.*;
@@ -12,12 +11,10 @@ import android.support.v4.view.*;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.*;
 import android.widget.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class phy_mechanics extends AppCompatActivity
@@ -27,7 +24,7 @@ public class phy_mechanics extends AppCompatActivity
     private ViewPager viewPager;
     private MyViewPagerAdapter viewPagerAdapter;
     //TabLayout标签
-    private String[] titles=new String[]{"运动","能量&力量"};
+    private String[] titles=new String[]{"运动","能量"};
     private List<Fragment> fragments=new ArrayList<>();
 
     public void onCreate(Bundle savedInstanceState){
@@ -57,7 +54,7 @@ public class phy_mechanics extends AppCompatActivity
 
         tabLayout.addOnTabSelectedListener(this);
         fragments.add(new phy_mechanics_motion());
-        fragments.add(new phy_mechanics_ene_pow());
+        fragments.add(new phy_mechanics_energy());
         viewPagerAdapter=new MyViewPagerAdapter(getSupportFragmentManager(),titles,fragments);
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);

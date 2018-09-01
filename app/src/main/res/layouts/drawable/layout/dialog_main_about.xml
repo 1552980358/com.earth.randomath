@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="- 首页加入OOXX小游戏 \n- 加入力学的“运动”与“能量&#038;力量” \n- 力学中加入TabLayout与Fragment与ViewPager \n- 代码优化 \n由于签名换了，还请卸载后再安装此更新"/>
+            android:text="- 首页加入OOXX小游戏 \n- 加入力学的“运动”与“能量” \n- 力学中加入TabLayout与Fragment与ViewPager \n- 代码优化 \n由于签名换了，还请卸载后再安装此更新"/>
 
         <TextView
             android:layout_width="wrap_content"
