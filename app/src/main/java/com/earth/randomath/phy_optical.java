@@ -1,11 +1,9 @@
 package com.earth.randomath;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
+import android.content.*;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.DocumentsProvider;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,9 +13,7 @@ import android.text.TextUtils;
 import android.view.*;
 import android.widget.*;
 
-import org.w3c.dom.Text;
 
-import java.util.function.DoubleUnaryOperator;
 
 public class phy_optical extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 

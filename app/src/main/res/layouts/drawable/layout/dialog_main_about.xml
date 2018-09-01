@@ -1,45 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center">
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_1"
-        android:layout_gravity="center"/>
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.3.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 首页加入OOXX小游戏 \n- 加入力学的“运动”与“能量&#038;力量” \n- 力学中加入TabLayout与Fragment与ViewPager \n- 代码优化 \n由于签名换了，还请卸载后再安装此更新"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_2"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.2.2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- UI调整&#038;美化\n- 代码优化 \n- 图片压缩"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_4"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.2.1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 紧急更新：修改随机数字布局"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_5"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.2.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 适配Android Pie \n- 依赖库com.android.support由28.0.0-beta1更新到28.0.0-rc1\n- 增加”物理 - 光学“\n- 更新”神秘领域“\n- 压缩图片"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_6"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.1.1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 紧急更新：修复Android N闪退 \n- 原因：启动图PNG签名错误，现已修改成另一张jpg格式的启动图"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dialog_main_about_7"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.1.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 修复 物理-热学 以及 在随机数字中不输入x和y值的意外停止 \n- 物理-热学中添加三个可计算的公式 \n- 添加启动图\n- 添加关于说明"/>
 
-
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+             android:textSize="@dimen/txt_size"
+            android:text="&#035;&#035; v1.0.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="- 先把框架啥的搭起 \n- 物理加入s.h.l的计算 \n- 随机整型数，掷骰子"/>
+    </LinearLayout>
+</ScrollView>

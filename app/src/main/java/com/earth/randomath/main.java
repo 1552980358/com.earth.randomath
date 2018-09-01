@@ -331,7 +331,7 @@ public class main extends AppCompatActivity
 
         if (show_dialog.equals("") || show_dialog.equals("2") ){
             AlertDialog.Builder dialog = new AlertDialog.Builder(main.this);
-            dialog.setTitle("科学随缘——简介");
+            dialog.setTitle("科学随缘——更新内容");
             dialog.setIcon(R.drawable.ic_launcher_round);
             dialog.setView(R.layout.dialog_main_about);
             dialog.setNegativeButton(R.string.radio_btn_not_show,new DialogInterface.OnClickListener() {
